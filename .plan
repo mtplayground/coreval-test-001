@@ -1,0 +1,25 @@
+# Architecture Plan
+
+## Overview
+This is a simple Rust binary project that prints "Hello, world!" to stdout.
+
+## Issues
+- **Issue #1: Hello world Rust binary** — Create a minimal Rust binary crate with a `main` function that prints "Hello, world!".
+
+## Module Structure
+```
+/
+├── Cargo.toml        # Manifest: package name = "coreval-test-001", edition 2021
+├── src/
+│   └── main.rs       # Entry point — fn main() prints "Hello, world!"
+├── .gitignore
+└── .plan
+```
+
+## Dependencies Between Issues
+- Only one issue; no inter-issue dependencies.
+
+## Key Design Decisions
+1. **Edition**: Use Rust 2021 edition.
+2. **No external dependencies**: A simple hello-world needs only the standard library.
+3. **Project lives at repo root**: Cargo.toml at the top level, source under `src/`.
